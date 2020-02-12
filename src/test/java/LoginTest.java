@@ -18,12 +18,20 @@ public class LoginTest {
     @Managed(driver = "chrome")
     WebDriver webDriver;
 
+    LandingPage landingPage;
+
+
     @Steps
     UserSteps userSteps;
 
-    @Test
+    /*@Test
     public void negativeLoginTest(){
         webDriver.get("https://www.linkedin.com/");
         userSteps.login("a@b.c","P@ssword123");
+    }*/
+    @Test
+    public void negativeLoginTest() {
+        landingPage.open();
+        userSteps.login("a@b.c", "P@ssword123");
     }
 }
