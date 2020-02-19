@@ -4,11 +4,12 @@ import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.junit.Assert;
 import pages.LandingPage;
+import pages.LoginChallengePage;
 
 public class UserSteps extends ScenarioSteps {
 
     private LandingPage landingPage;
-    private LoginChallenge loginChallenge;
+    private LoginChallengePage loginChallenge;
 
     @Step
     public UserSteps login(String userEmail, String userPassword){
