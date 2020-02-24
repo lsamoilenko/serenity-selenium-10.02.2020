@@ -13,7 +13,7 @@ public class SearchTest extends BaseTest {
     public void before(){
         user
                 .auth()
-                .login("lsamoylenko@i.ua","e1dk99SAN");
+                .login("linkedin_tst@i.ua","Qwerty123");
     }
 
     @Test
