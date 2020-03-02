@@ -10,11 +10,12 @@ import org.openqa.selenium.WebElement;
 
 public class HomePage extends PageObject {
 
-    @FindBy(xpath = "//input[@role='combobox']")
-    private WebElement searchField;
-
-    @FindBy(xpath = "//li[@id=''profile-nav-item']")
+    @FindBy(xpath = "//li[@id='profile-nav-item']")
     private WebElement profileNavItem;
+    @FindBy (xpath  ="//div[@data-control-name='identity_welcome_message']")
+    private WebElement welcomeMessage;
+    @FindBy(xpath = "//form[@id='extended-nav-search']//input")
+    private WebElement searchField;
 
     public void searchFor(String searchTerm){
         searchField.sendKeys(searchTerm);
